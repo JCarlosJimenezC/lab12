@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-    "scripts": {
+  "scripts": {
     "dev": "pnpx servor src/ index.html 1234 --reload",
     "build": "echo 'Build script'",
     "deploy": "gh-pages -d src"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,5 +15,8 @@
   "dependencies": {
     "servor": "^4.0.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
