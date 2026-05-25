@@ -2,21 +2,25 @@
   "name": "lab12",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "pnpx servor src/ index.html 1234 --reload",
-    "build": "echo 'Build script'",
-    "deploy": "gh-pages -d src"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.32.1",
-  "dependencies": {
-    "servor": "^4.0.2"
-  },
   "type": "module",
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "happy-dom": "^17.4.4",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
   }
 }
